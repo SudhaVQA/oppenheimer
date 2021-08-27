@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-OppenheimerProjectSuite" class="navigator-link">
+              <span class="suite-name border-passed">OppenheimerProjectSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-OppenheimerProjectSuite" class="navigator-link ">
+                    <span>C:\Users\sudha\eclipse-workspace\oppenheimerproject\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-OppenheimerProjectSuite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-OppenheimerProjectSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-OppenheimerProjectSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-OppenheimerProjectSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-OppenheimerProjectSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-OppenheimerProjectSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-OppenheimerProjectSuite" class="hide-methods passed suite-OppenheimerProjectSuite"> (hide)</a> <!-- hide-methods passed suite-OppenheimerProjectSuite -->
+                      <a href="#" panel-name="suite-OppenheimerProjectSuite" class="show-methods passed suite-OppenheimerProjectSuite"> (show)</a> <!-- show-methods passed suite-OppenheimerProjectSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-OppenheimerProjectSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OppenheimerProjectSuite" title="com.app.test.TC_UI_UserStory5" class="method navigator-link" hash-for-method="dispenseNow">dispenseNow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OppenheimerProjectSuite" title="com.app.test.TC_UI_UserStory3" class="method navigator-link" hash-for-method="fileupload">fileupload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OppenheimerProjectSuite" title="com.app.test.TC_API_UserStory2" class="method navigator-link" hash-for-method="test_add_multipleWorkingClassHero_valid1Inputs">test_add_multipleWorkingClassHero_valid1Inputs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OppenheimerProjectSuite" title="com.app.test.TC_API_UserStory2" class="method navigator-link" hash-for-method="test_add_multipleWorkingClassHero_valid2Inputs">test_add_multipleWorkingClassHero_valid2Inputs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OppenheimerProjectSuite" title="com.app.test.TC_API_UserStory2" class="method navigator-link" hash-for-method="test_add_multipleWorkingClassHero_valid3Inputs">test_add_multipleWorkingClassHero_valid3Inputs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OppenheimerProjectSuite" title="com.app.test.TC_API_UserStory1" class="method navigator-link" hash-for-method="test_add_singleWorkingClassHero_invalidGender">test_add_singleWorkingClassHero_invalidGender</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OppenheimerProjectSuite" title="com.app.test.TC_API_UserStory1" class="method navigator-link" hash-for-method="test_add_singleWorkingClassHero_invalidPatternBirthday">test_add_singleWorkingClassHero_invalidPatternBirthday</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OppenheimerProjectSuite" title="com.app.test.TC_API_UserStory1" class="method navigator-link" hash-for-method="test_add_singleWorkingClassHero_validInputs">test_add_singleWorkingClassHero_validInputs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OppenheimerProjectSuite" title="com.app.test.TC_API_UserStory4" class="method navigator-link" hash-for-method="test_get_TaxRelief_WorkingClassHero">test_get_TaxRelief_WorkingClassHero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-OppenheimerProjectSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-OppenheimerProjectSuite" class="panel OppenheimerProjectSuite">
+          <div class="suite-OppenheimerProjectSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.app.test.TC_API_UserStory1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_add_singleWorkingClassHero_invalidGender">
+                  </a> <!-- test_add_singleWorkingClassHero_invalidGender -->
+                  <span class="method-name">test_add_singleWorkingClassHero_invalidGender</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_add_singleWorkingClassHero_invalidPatternBirthday">
+                  </a> <!-- test_add_singleWorkingClassHero_invalidPatternBirthday -->
+                  <span class="method-name">test_add_singleWorkingClassHero_invalidPatternBirthday</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_add_singleWorkingClassHero_validInputs">
+                  </a> <!-- test_add_singleWorkingClassHero_validInputs -->
+                  <span class="method-name">test_add_singleWorkingClassHero_validInputs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OppenheimerProjectSuite-class-passed -->
+          <div class="suite-OppenheimerProjectSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.app.test.TC_UI_UserStory5</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dispenseNow">
+                  </a> <!-- dispenseNow -->
+                  <span class="method-name">dispenseNow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OppenheimerProjectSuite-class-passed -->
+          <div class="suite-OppenheimerProjectSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.app.test.TC_UI_UserStory3</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fileupload">
+                  </a> <!-- fileupload -->
+                  <span class="method-name">fileupload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OppenheimerProjectSuite-class-passed -->
+          <div class="suite-OppenheimerProjectSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.app.test.TC_API_UserStory2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_add_multipleWorkingClassHero_valid1Inputs">
+                  </a> <!-- test_add_multipleWorkingClassHero_valid1Inputs -->
+                  <span class="method-name">test_add_multipleWorkingClassHero_valid1Inputs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_add_multipleWorkingClassHero_valid2Inputs">
+                  </a> <!-- test_add_multipleWorkingClassHero_valid2Inputs -->
+                  <span class="method-name">test_add_multipleWorkingClassHero_valid2Inputs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_add_multipleWorkingClassHero_valid3Inputs">
+                  </a> <!-- test_add_multipleWorkingClassHero_valid3Inputs -->
+                  <span class="method-name">test_add_multipleWorkingClassHero_valid3Inputs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OppenheimerProjectSuite-class-passed -->
+          <div class="suite-OppenheimerProjectSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.app.test.TC_API_UserStory4</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_get_TaxRelief_WorkingClassHero">
+                  </a> <!-- test_get_TaxRelief_WorkingClassHero -->
+                  <span class="method-name">test_get_TaxRelief_WorkingClassHero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OppenheimerProjectSuite-class-passed -->
+        </div> <!-- panel OppenheimerProjectSuite -->
+        <div panel-name="test-xml-OppenheimerProjectSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\sudha\eclipse-workspace\oppenheimerproject\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;OppenheimerProjectSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;UITestInChrome&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.app.test.TC_UI_UserStory3&quot;/&gt;
+      &lt;class name=&quot;com.app.test.TC_UI_UserStory5&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- UITestInChrome --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;APITest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.app.test.TC_API_UserStory1&quot;/&gt;
+      &lt;class name=&quot;com.app.test.TC_API_UserStory2&quot;/&gt;
+      &lt;class name=&quot;com.app.test.TC_API_UserStory4&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- APITest --&gt;
+&lt;/suite&gt; &lt;!-- OppenheimerProjectSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-OppenheimerProjectSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for OppenheimerProjectSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">UITestInChrome (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">APITest (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-OppenheimerProjectSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for OppenheimerProjectSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-OppenheimerProjectSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for OppenheimerProjectSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_OppenheimerProjectSuite');
+function tableData_OppenheimerProjectSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'fileupload')
+data.setCell(0, 2, 'com.app.test.TC_UI_UserStory3')
+data.setCell(0, 3, 14134);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test_add_singleWorkingClassHero_validInputs')
+data.setCell(1, 2, 'com.app.test.TC_API_UserStory1')
+data.setCell(1, 3, 5994);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'dispenseNow')
+data.setCell(2, 2, 'com.app.test.TC_UI_UserStory5')
+data.setCell(2, 3, 3247);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test_get_TaxRelief_WorkingClassHero')
+data.setCell(3, 2, 'com.app.test.TC_API_UserStory4')
+data.setCell(3, 3, 2483);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'test_add_singleWorkingClassHero_invalidPatternBirthday')
+data.setCell(4, 2, 'com.app.test.TC_API_UserStory1')
+data.setCell(4, 3, 418);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'test_add_singleWorkingClassHero_invalidGender')
+data.setCell(5, 2, 'com.app.test.TC_API_UserStory1')
+data.setCell(5, 3, 295);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test_add_multipleWorkingClassHero_valid1Inputs')
+data.setCell(6, 2, 'com.app.test.TC_API_UserStory2')
+data.setCell(6, 3, 84);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'test_add_multipleWorkingClassHero_valid2Inputs')
+data.setCell(7, 2, 'com.app.test.TC_API_UserStory2')
+data.setCell(7, 3, 74);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'test_add_multipleWorkingClassHero_valid3Inputs')
+data.setCell(8, 2, 'com.app.test.TC_API_UserStory2')
+data.setCell(8, 3, 52);
+window.suiteTableData['OppenheimerProjectSuite']= { tableData: data, tableDiv: 'times-div-OppenheimerProjectSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <div id="times-div-OppenheimerProjectSuite">
+              </div> <!-- times-div-OppenheimerProjectSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-OppenheimerProjectSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for OppenheimerProjectSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-OppenheimerProjectSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-OppenheimerProjectSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.app.test.TC_UI_UserStory3</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp(Chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.app.test.TC_UI_UserStory5</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUp(Chrome)</span>
+                <span class="method-start">20470 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.app.test.TC_UI_UserStory3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">fileupload</span>
+                <span class="method-start">31499 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.app.test.TC_UI_UserStory5</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">dispenseNow</span>
+                <span class="method-start">45649 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.app.test.TC_API_UserStory1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_add_singleWorkingClassHero_validInputs</span>
+                <span class="method-start">49353 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_add_singleWorkingClassHero_invalidPatternBirthday</span>
+                <span class="method-start">55411 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_add_singleWorkingClassHero_invalidGender</span>
+                <span class="method-start">55841 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.app.test.TC_API_UserStory2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_add_multipleWorkingClassHero_valid2Inputs</span>
+                <span class="method-start">56141 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_add_multipleWorkingClassHero_valid3Inputs</span>
+                <span class="method-start">56222 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_add_multipleWorkingClassHero_valid1Inputs</span>
+                <span class="method-start">56277 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.app.test.TC_API_UserStory4</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">test_get_TaxRelief_WorkingClassHero</span>
+                <span class="method-start">56365 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

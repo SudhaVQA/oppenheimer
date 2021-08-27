@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OppenheimerProjectSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="UITestInChrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.app.test.TC_UI_UserStory5">
+        <methods>
+          <include name="dispenseNow"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.app.test.TC_UI_UserStory5 -->
+    </classes>
+  </test> <!-- UITestInChrome(failed) -->
+</suite> <!-- Failed suite [OppenheimerProjectSuite] -->

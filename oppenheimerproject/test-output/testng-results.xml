@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-27T15:15:24 SGT" name="OppenheimerProjectSuite" finished-at="2021-08-27T15:16:23 SGT" duration-ms="58863">
+    <groups>
+    </groups>
+    <test started-at="2021-08-27T15:15:24 SGT" name="UITestInChrome" finished-at="2021-08-27T15:16:13 SGT" duration-ms="48915">
+      <class name="com.app.test.TC_UI_UserStory3">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.app.test.TC_UI_UserStory3@6c7a164b]" started-at="2021-08-27T15:15:24 SGT" name="setUp" finished-at="2021-08-27T15:15:45 SGT" duration-ms="20469" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="fileupload()[pri:0, instance:com.app.test.TC_UI_UserStory3@6c7a164b]" started-at="2021-08-27T15:15:56 SGT" name="fileupload" finished-at="2021-08-27T15:16:10 SGT" duration-ms="14134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileupload -->
+      </class> <!-- com.app.test.TC_UI_UserStory3 -->
+      <class name="com.app.test.TC_UI_UserStory5">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.app.test.TC_UI_UserStory5@536dbea0]" started-at="2021-08-27T15:15:45 SGT" name="setUp" finished-at="2021-08-27T15:15:54 SGT" duration-ms="9136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="dispenseNow()[pri:0, instance:com.app.test.TC_UI_UserStory5@536dbea0]" started-at="2021-08-27T15:16:10 SGT" name="dispenseNow" finished-at="2021-08-27T15:16:13 SGT" duration-ms="3247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dispenseNow -->
+      </class> <!-- com.app.test.TC_UI_UserStory5 -->
+    </test> <!-- UITestInChrome -->
+    <test started-at="2021-08-27T15:16:14 SGT" name="APITest" finished-at="2021-08-27T15:16:23 SGT" duration-ms="9503">
+      <class name="com.app.test.TC_API_UserStory2">
+        <test-method signature="test_add_multipleWorkingClassHero_valid2Inputs()[pri:1, instance:com.app.test.TC_API_UserStory2@205d38da]" started-at="2021-08-27T15:16:20 SGT" name="test_add_multipleWorkingClassHero_valid2Inputs" finished-at="2021-08-27T15:16:20 SGT" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_add_multipleWorkingClassHero_valid2Inputs -->
+        <test-method signature="test_add_multipleWorkingClassHero_valid3Inputs()[pri:2, instance:com.app.test.TC_API_UserStory2@205d38da]" started-at="2021-08-27T15:16:20 SGT" name="test_add_multipleWorkingClassHero_valid3Inputs" finished-at="2021-08-27T15:16:20 SGT" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_add_multipleWorkingClassHero_valid3Inputs -->
+        <test-method signature="test_add_multipleWorkingClassHero_valid1Inputs()[pri:3, instance:com.app.test.TC_API_UserStory2@205d38da]" started-at="2021-08-27T15:16:20 SGT" name="test_add_multipleWorkingClassHero_valid1Inputs" finished-at="2021-08-27T15:16:21 SGT" duration-ms="84" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_add_multipleWorkingClassHero_valid1Inputs -->
+      </class> <!-- com.app.test.TC_API_UserStory2 -->
+      <class name="com.app.test.TC_API_UserStory1">
+        <test-method signature="test_add_singleWorkingClassHero_validInputs()[pri:1, instance:com.app.test.TC_API_UserStory1@26adfd2d]" started-at="2021-08-27T15:16:14 SGT" name="test_add_singleWorkingClassHero_validInputs" finished-at="2021-08-27T15:16:20 SGT" duration-ms="5994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_add_singleWorkingClassHero_validInputs -->
+        <test-method signature="test_add_singleWorkingClassHero_invalidPatternBirthday()[pri:2, instance:com.app.test.TC_API_UserStory1@26adfd2d]" started-at="2021-08-27T15:16:20 SGT" name="test_add_singleWorkingClassHero_invalidPatternBirthday" finished-at="2021-08-27T15:16:20 SGT" duration-ms="418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_add_singleWorkingClassHero_invalidPatternBirthday -->
+        <test-method signature="test_add_singleWorkingClassHero_invalidGender()[pri:3, instance:com.app.test.TC_API_UserStory1@26adfd2d]" started-at="2021-08-27T15:16:20 SGT" name="test_add_singleWorkingClassHero_invalidGender" finished-at="2021-08-27T15:16:20 SGT" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_add_singleWorkingClassHero_invalidGender -->
+      </class> <!-- com.app.test.TC_API_UserStory1 -->
+      <class name="com.app.test.TC_API_UserStory4">
+        <test-method signature="test_get_TaxRelief_WorkingClassHero()[pri:1, instance:com.app.test.TC_API_UserStory4@6950ed69]" started-at="2021-08-27T15:16:21 SGT" name="test_get_TaxRelief_WorkingClassHero" finished-at="2021-08-27T15:16:23 SGT" duration-ms="2483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_get_TaxRelief_WorkingClassHero -->
+      </class> <!-- com.app.test.TC_API_UserStory4 -->
+    </test> <!-- APITest -->
+  </suite> <!-- OppenheimerProjectSuite -->
+</testng-results>
