@@ -28,10 +28,34 @@ public class TC_API_UserStory1 extends CommonUtils{
 	}
 	
 	@Test(priority=1)
-	public void test_add_singleWorkingClassHero_validInputs() 
+	public void test_add_singleWorkingClassHero_validInputsFemale() 
 	{
 		Log.info("Inside test_add_singleWorkingClassHero_validInputs..");
-		HashMap<String,String> data=testDataSetup_Person("24031990","F","TestUser F_AG31","1234567890","10000.00","10.00");
+		HashMap<String,String> data=testDataSetup_Person("16012004","F","TestUser F_AG17","1234567890","10000.00","10.00");
+		Log.info("Data inserted in body is: "+data);
+		Response res=
+				RestAssured.
+				given()
+				.contentType("application/json")
+				.body(data)
+				.when()
+				.post(Constants.sSingleWorkingClassHeroInsertURL)
+				.then()
+				.statusCode(202)
+				.log()
+				.body()
+				.extract().response();
+		String jsonString=res.asString();
+		Log.info("Json string response:"+jsonString);
+		Log.info("Asserting valid message in response equals "+sValidResponse);
+		Assert.assertEquals(jsonString.equals(sValidResponse),true);
+
+	}
+	@Test(priority=1)
+	public void test_add_singleWorkingClassHero_validInputsMale() 
+	{
+		Log.info("Inside test_add_singleWorkingClassHero_validInputs..");
+		HashMap<String,String> data=testDataSetup_Person("16012004","M","TestUser M_AG18","2234567890","10000.00","10.00");
 		Log.info("Data inserted in body is: "+data);
 		Response res=
 				RestAssured.

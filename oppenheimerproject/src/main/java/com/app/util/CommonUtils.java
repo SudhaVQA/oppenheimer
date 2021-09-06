@@ -114,8 +114,8 @@ public class CommonUtils {
 		String sDate1=sDOB;
 		int iGenderBonus = 0;
 		Date date1=new SimpleDateFormat("ddMMyyyy").parse(sDate1);
-		DecimalFormat decimalFormat = new DecimalFormat("0.00");
-		System.out.println(sDate1+"\t"+date1);
+		DecimalFormat decimalFormat = new DecimalFormat("#0.00");
+		Log.info(sDate1+"\t"+date1);
 		Calendar c = Calendar.getInstance();
 		  c.setTime(date1);
 		  int year = c.get(Calendar.YEAR);
@@ -125,7 +125,7 @@ public class CommonUtils {
 		  LocalDate now1 = LocalDate.now();
 		  Period diff1 = Period.between(l1, now1);
 		  iAge=diff1.getYears();
-		  System.out.println("age:" + iAge + "years");
+		Log.info("age:" + iAge + "years");
 
 		  
 		double dVariable=0;
@@ -148,16 +148,37 @@ public class CommonUtils {
 		else if(sGender.equalsIgnoreCase("M")) {
 			iGenderBonus=0;
 		}
+		
+
 		dTaxRelief=((dSalary-dTax)*dVariable)+iGenderBonus;
-		System.out.println("Calculated Tax Relief without truncation: "+dTaxRelief);
-		decimalFormat.setRoundingMode(RoundingMode.UP);
+		Log.info("Calculated Tax Relief without truncation: "+dTaxRelief);
 		String sTaxReliefAfterRounding=decimalFormat.format(dTaxRelief);
-		System.out.println("Calculated Tax Relief with truncation: "+sTaxReliefAfterRounding);
-		Double dTaxReliefAfterRounding=Double.parseDouble(sTaxReliefAfterRounding);
+		Log.info("Calculated Tax Relief with truncation of 2 decimal places: "+sTaxReliefAfterRounding);
+		//decimalFormat.setRoundingMode(RoundingMode.UP);
+		String decimalValue=sTaxReliefAfterRounding.substring ( sTaxReliefAfterRounding.indexOf ( "." ) );
+		//Log.info("Decimal value is :"+decimalValue.substring(1, 2));
+		double str1 = Double.parseDouble(decimalValue);
+		Log.info("Double decimal value is:"+str1);
+		String sTaxReliefAfterRounding1;
+		if(str1>=.00 && str1<=.50) {
+			Log.info("inside if of str1>=.00 && str1<=.50");
+			 sTaxReliefAfterRounding1=decimalFormat.format((Math.round(dTaxRelief)));
+			 Log.info("sTaxReliefAfterRounding1: "+sTaxReliefAfterRounding1);
+		}
+		else {
+			Log.info("inside else of str1>=.00 && str1<=.50");
+		 sTaxReliefAfterRounding1=sTaxReliefAfterRounding;
+		 Log.info("sTaxReliefAfterRounding1: "+sTaxReliefAfterRounding1);
+		}
+		Log.info("Calculated Tax Relief with truncation and applying normal rounding up: "+sTaxReliefAfterRounding1);
+		Double dTaxReliefAfterRounding=Double.parseDouble(sTaxReliefAfterRounding1);
+		Log.info("Double Calculated Tax Relief with truncation: "+(dTaxReliefAfterRounding));
 		if(dTaxReliefAfterRounding>0.00&&dTaxReliefAfterRounding<50.00) {
 			dTaxReliefAfterRounding=50.00;
 		}
-		sFinalTaxRelief=dTaxReliefAfterRounding.toString();
+		
+		sFinalTaxRelief=decimalFormat.format(dTaxReliefAfterRounding);
+		Log.info("Final tax relief amount is:"+sFinalTaxRelief);
 		return sFinalTaxRelief;
 		
 	}
@@ -174,7 +195,7 @@ public class CommonUtils {
 				maskednatId=maskednatId+"$";
 			}
         }
-		
+		Log.info("Masked NatId is:"+maskednatId);
 		return maskednatId;
 		
 	}

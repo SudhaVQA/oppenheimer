@@ -32,8 +32,8 @@ public class TC_API_UserStory2 extends CommonUtils{
 	{
 		Log.info("test_add_multipleWorkingClassHero_valid2Inputs");
 		List<Map<String,String>> multidata=new ArrayList<Map<String, String>>();
-		HashMap<String,String> data1=testDataSetup_Person("24031990","F","Testuser MU2a","2234567890","10000.00","10.00");
-		HashMap<String,String> data2=testDataSetup_Person("12031990","M","Testuser MU2b","3234567890","10000.00","10.00");
+		HashMap<String,String> data1=testDataSetup_Person("06052002","F","Testuser F19 MU2a","3234567890","10000.17896","10.123");
+		HashMap<String,String> data2=testDataSetup_Person("06091986","M","Testuser M35 MU2b","4234567890","9896.12398","9.000");
 		multidata.add(data1);
 		multidata.add(data2);
 		Log.info("Data inserted in body is: "+multidata);
@@ -56,19 +56,26 @@ public class TC_API_UserStory2 extends CommonUtils{
 
 	}
 	@Test(priority=2)
-	public void test_add_multipleWorkingClassHero_valid3Inputs()
+	public void test_add_multipleWorkingClassHero_validMoreThan3Inputs()
 	{
 		Log.info("test_add_multipleWorkingClassHero_valid3Inputs");
 		List<Map<String,String>> multidata=new ArrayList<Map<String, String>>();
 
 
-		HashMap<String,String> data1=testDataSetup_Person("24031990","F","Testuser MU3a","4234567890","10000.00","10.00");
-		HashMap<String,String> data2=testDataSetup_Person("12031990","M","Testuser MU3b","5234567890","10000.00","10.00");
-		HashMap<String,String> data3=testDataSetup_Person("12031990","M","Testuser MU3c","6234567890","10000.00","10.00");
-
+		HashMap<String,String> data1=testDataSetup_Person("06041985","F","Testuser F36 MU3a","5234567890","17965.8963","289.15890");
+		HashMap<String,String> data2=testDataSetup_Person("20081971","M","Testuser M50 MU3b","6234567890","189632.01450","639.14896");
+		HashMap<String,String> data3=testDataSetup_Person("20021970","F","Testuser F51 MU3c","7234567890","9862589.890","1896.013960");
+		HashMap<String,String> data4=testDataSetup_Person("01091946","M","Testuser M75 MU3b","8234567890","989632.996328","39.89698");
+		HashMap<String,String> data5=testDataSetup_Person("01121944","F","Testuser F76 MU3c","9234567890","9862589.156","1630.606");
+		HashMap<String,String> data6=testDataSetup_Person("24031990","M","Testuser M31 MU1a","2334567890","10000.00","9999.00");
+		HashMap<String,String> data7=testDataSetup_Person("24031990","F","Testuser F31 MU1xTaxabove50","3334567890","10000.00","990.00");
 		multidata.add(data1);
 		multidata.add(data2);
 		multidata.add(data3);
+		multidata.add(data4);
+		multidata.add(data5);
+		multidata.add(data6);
+		multidata.add(data7);
 		Log.info("Data inserted in body is: "+multidata);
 		Response res=
 				RestAssured.
@@ -93,7 +100,7 @@ public class TC_API_UserStory2 extends CommonUtils{
 		Log.info("test_add_multipleWorkingClassHero_valid1Inputs");
 		List<Map<String,String>> multidata=new ArrayList<Map<String, String>>();
 
-		HashMap<String,String> data1=testDataSetup_Person("24031990","F","Testuser MU1a","7234567890","10000.00","10.00");
+		HashMap<String,String> data1=testDataSetup_Person("24031990","F","Testuser F31 MU1a","1334567890","10000.00","1.00");
 		multidata.add(data1);
 		Log.info("Data inserted in body is: "+multidata);
 		

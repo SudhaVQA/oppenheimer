@@ -20,19 +20,20 @@ import org.openqa.selenium.support.Color;
 public class TC_UI_UserStory5 extends CommonUtils{
 	PropLocation propFile=new PropLocation();
 	ReadPropValues eleLocated=new ReadPropValues(propFile.elementLocation());
+	WebElement button;
 	@Parameters({"browser"})
 	@BeforeTest
 	public void setUp(String browser) throws InterruptedException, IOException {
 		setBrowser(browser);
 	}
 
+	
 	@Test
-	public void dispenseNow() 
-	{
+	public void verifyButtonColorIsRed() {
 		try {
-			Log.info("Inside dispenseNow ");
+			Log.info("Inside verifyButtonColorIsRed ");
 		 driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-		WebElement button=driver.findElement(By.xpath(eleLocated.readProperty("btnDispenseNow")));
+		button=driver.findElement(By.xpath(eleLocated.readProperty("btnDispenseNow")));
 		Actions actions=new Actions(driver);
 		actions.moveToElement(button).perform();
 		 driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
@@ -47,18 +48,36 @@ public class TC_UI_UserStory5 extends CommonUtils{
         //Verify if actual and expected color values are equal?
         Assert.assertEquals(hexColorValue, expectedbuttonColor);
     	Assert.assertEquals(buttonColor.equals(buttonColor),true);
-    	
-    	
-    	String btnText;
+		}catch (Exception e) {
+   		 Log.info("Inside Exception of verifyButtonColorIsRed "+e.getMessage());
+		}
+	}
+	@Test
+	public void verifyButtonTextIsDispenseNow() {
+		try {
+			Log.info("Inside verifyButtonTextIsDispenseNow ");
+		 driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		 button=driver.findElement(By.xpath(eleLocated.readProperty("btnDispenseNow")));
+		String btnText;
 		
-			btnText = eleLocated.readProperty("btnDispensenNowText");
-		
-    	String btnTextFromUI=button.getAttribute("innerHTML");
-    	Log.info("Button text mfrom UI: "+btnTextFromUI);
-    	Log.info("Asserting the button text matched exactly the text: "+btnText);
-    	Assert.assertEquals(btnTextFromUI.equals(btnText),true);
-    	 driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-    	 
+		btnText = eleLocated.readProperty("btnDispensenNowText");
+	
+	String btnTextFromUI=button.getAttribute("innerHTML");
+	Log.info("Button text mfrom UI: "+btnTextFromUI);
+	Log.info("Asserting the button text matched exactly the text: "+btnText);
+	Assert.assertEquals(btnTextFromUI.equals(btnText),true);
+	 driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		}catch (Exception e) {
+	   		 Log.info("Inside Exception of verifyButtonTextIsDispenseNow "+e.getMessage());
+			}
+	}
+	
+	@Test
+	public void verifyBtnClickRedirectsToPagewithText_Cashdispensed() 
+	{
+		try {
+			Log.info("Inside verifyBtnClickRedirectsToPagewithText_Cashdispensed ");
+			button=driver.findElement(By.xpath(eleLocated.readProperty("btnDispenseNow")));
     	Log.info("Clicking on button Dispense Now");
     	button.click();
     	driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
